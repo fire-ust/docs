@@ -1,0 +1,55 @@
+June 2019
+==========
+
+The following features have been released in June 2019.
+
+Improvements in UI 
+-------------------
+
+- Displaying text in Workflow Execution Page with more details visible.
+- CSV and other read file nodes, now display the name of the file.
+- When cloning a node in the editor, the cloned node is created close to the original node.
+
+Improvements to HDFS Browser
+----------------------------
+
+- Fire Insights now allows moving multiple files from one directory to another.
+
+
+Support Of Authentication Using Token
+--------------------------------------------------------
+
+- Fire now supports two methods Of getting tokens to access Fire
+  
+ - Grant Types – Password.
+ - Grant Types – Authorization code.
+ 
+Improvements in Dataset
+------------------------
+ 
+- Look and feel of the edit Dataset page has been upgraded.
+
+Running Applications Locally
+----------------------------
+ 
+ - Workflows when running locally are now executed as separate Java or Python processes.
+ 
+Node Updates
+-----------------
+
+- JoinUsingSQL now allows joining multiple datasets at a time.
+ 
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+

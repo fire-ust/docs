@@ -1,0 +1,38 @@
+3.1.0 Release Notes
+=================
+
+* Release Date: 09/01/2018
+
+* Download TGZ name: sparkflows-fire-3.1.0.tgz
+
+* TGZ Size: 505 MB
+
+Contents of this release
+-------------------------
+
+* New Processors Added
+    * Decision Node Processor
+    * JSON Parser Processor
+    * SortBy Processor
+    * Empty Dataset Processor
+    * Multi-Validation Processor
+    * String Functions Multiple Processor
+    * Math Functions Multiple Processor
+    * Case When Processor
+    * Remove Duplicates Processor
+* Support for uploading files to HDFS
+* Support for LDAP
+* Support for running the workflows in debug mode.
+    * In debug mode, the number of records processed at each Node are printed.
+    * SQL executed is printed where relevant
+* Various Workflow Editor Upgrades
+    * Ability to rename the Nodes
+    * Richer support in JDBC Processor for interactive execution
+    * Save Warning when moving away from the Workflow Editor
+    * Rich widget support for Multi-Validations Processor
+* Support for Caching Datasets in any Processor
+* Support for Workflow Cloning
+* Richer support in Dashboard Editor for drag and drop of Processors
+
+
+

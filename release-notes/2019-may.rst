@@ -1,0 +1,43 @@
+May 2019
+========
+
+The following features have been released in May 2019.
+
+PySpark Engine
+---------------
+
+* New engine for running PySpark
+
+New Processors
+--------------
+
+Outlier Detection
++++++++++++++++++
+
+* New Node for Outlier Detection
+
+Improvements to HDFS Browser
+----------------------------
+
+* Displaying user permission for each file/directory
+* Displaying an icon indicating whether it is file or directory
+* Better display of error messages
+
+Applications
+------------
+
+* Datasets tab is the first tab now
+
+Datasets
+--------
+
+* Better display of the Create/Edit dataset page
+* Do not display JDBC passwords
+
+Workflow Editor
+---------------
+
+* Ability to create DataSet nodes by browsing the list of datasets
+* HIVE DB browser on the LHS
+* Better display of the processors
+* Fix for tabs in dialogs not showing up (eg. in LogisticRegression Processor)

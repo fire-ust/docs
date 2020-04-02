@@ -1,0 +1,166 @@
+/*@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');*/
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700');
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,
+h2,
+.rst-content .toctree-wrapper p.caption,
+h3,
+h4,
+h5,
+h6,
+legend {
+    font-family: 'Source Sans Pro';
+}
+.wy-nav-content h1 {
+    font-weight: 300;
+    font-size: 45px;
+}
+
+h1,
+h2,
+.rst-content .toctree-wrapper p.caption,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+.wy-side-nav-search,
+.wy-nav-side {
+    background-color: #fafafa;
+    color: #4a4a4a;
+}
+
+.wy-side-nav-search > div.version {
+    color: #4a4a4a;
+}
+
+.wy-side-nav-search input[type='text'] {
+    border-radius: 0;
+}
+.wy-menu-vertical li.current a {
+    color: #4a4a4a;
+}
+.wy-menu-vertical li.current,
+.wy-menu-vertical li.toctree-l2.current > a {
+    background: #fafafa;
+}
+
+.wy-menu-vertical li.current a {
+    border-right: 0;
+}
+
+.wy-menu-vertical li a {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+
+.wy-menu-vertical a {
+    color: #4a4a4a;
+}
+.wy-menu-vertical li.on a,
+.wy-menu-vertical li.current > a {
+    color: #4a4a4a;
+    background: #fafafa;
+    border-bottom: solid 1px #c9c9c9;
+    border-top: solid 1px #fafafa;
+}
+
+.wy-menu-vertical li.toctree-l2.current > a {
+    color: #4a4a4a;
+    background: #fafafa;
+    border-bottom: solid 1px #fafafa;
+    border-top: solid 1px #fafafa;
+}
+
+.wy-menu-vertical li.toctree-l2.current li.toctree-l3 > a {
+    color: #4a4a4a;
+    background: #fafafa;
+    border-bottom: solid 1px #fafafa;
+    border-top: solid 1px #fafafa;
+}
+
+.wy-menu-vertical li.toctree-l2.current li.toctree-l3.current > a {
+    color: #4a4a4a;
+    background: #fafafa;
+    border-bottom: solid 1px #fafafa;
+    border-top: solid 1px #fafafa;
+}
+
+.wy-menu-vertical li.on a:hover,
+.wy-menu-vertical li.current > a:hover,
+.wy-menu-vertical a:hover,
+.wy-menu-vertical li.current a:hover {
+    color: #4a4a4a;
+    background: #015e86;
+}
+
+.fa-minus-square-o:before,
+.wy-menu-vertical li.on a span.toctree-expand:before,
+.wy-menu-vertical li.current > a span.toctree-expand:before {
+    content: '\f13a';
+    color: #4a4a4a;
+}
+
+.icon.icon-home {
+    font-size: 0;
+}
+
+.wy-nav-content {
+    padding: 1.618em 3.236em;
+    height: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+
+.wy-breadcrumbs li a:visited,
+.wy-breadcrumbs li a,
+.wy-nav-content a:visited {
+    color: #4a4a4a;
+}
+
+.wy-nav-side [class*='toctree'] > a {
+    background: #fafafa !important;
+}
+
+.fa-plus-square-o:before,
+.wy-menu-vertical li span.toctree-expand:before {
+    content: '\f139';
+    color: #4a4a4a;
+}
+
+.wy-menu-vertical .toctree-l1.current {
+    border-bottom: solid 1px #c9c9c9;
+}
+
+.section {
+    padding-bottom: 30px;
+}
+
+.wy-nav-content {
+    background: #fff;
+}
+
+.highlight {
+    background: #f1f1f1;
+}
+
+/* override table width restrictions */
+@media screen and (min-width: 767px) {
+    .wy-table-responsive table td {
+        /* !important prevents the common CSS stylesheets from overriding
+         this as on RTD they are loaded after this stylesheet */
+        white-space: normal !important;
+    }
+
+    .wy-table-responsive {
+        overflow: visible !important;
+    }
+}
+
+.wy-menu-vertical a {
+    font-size: 0.9rem;
+}
