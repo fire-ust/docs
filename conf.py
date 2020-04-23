@@ -60,9 +60,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'Sparkflows'
-copyright = '2017, Sparkflows Inc.'
-author = 'Sparkflows'
+project = 'UST Fire'
+copyright = '2020, UST Global Inc'
+author = 'UST Fire'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
