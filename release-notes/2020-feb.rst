@@ -1,0 +1,17 @@
+February 2020
+==============
+
+New Features
+------------
+
+- Job Metrics Integrations with improvements
+- SUPERUSER to have more rights when elevated access is enabled
+- If User is inactive, he cant able to login
+- Added Runtime Statistics
+- Added Compare model
+
+
+UI Improvement
+--------------
+
+- Improvement to Connection page
