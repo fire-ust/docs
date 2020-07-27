@@ -12,41 +12,53 @@ Fire Insights follows an open and extensible architecture allowing developers to
 
   * https://github.com/sparkflows/sparkflows-stanfordcorenlp
  
-Start by cloning the github repo: writing-new-node
+Step 1: Start by cloning the github repo: writing-new-node
 -----------------------------------------------------
 
 The easiest way to start writing a new node or processor is by cloning the ``writing-new-node`` repo using the command below:
 
     git clone https://github.com/sparkflows/writing-new-node.git
   
+Step 2: Install the Fire core jar to the local maven directory
+-----------------------------------------------------
+Install the fire core jar to your local maven repository. the pom.xml contains the dependency for it.
+*mvn install:install-file -Dfile=fire-spark_2.4-core-3.1.0.jar -DgroupId=fire -DartifactId=fire-spark_2.4-core -Dversion=3.1.0 -Dpackaging=jar
 
-Code the new custom node
+
+Step 3: Code the new custom node
 ------------------------
- 
- Start by creating a new class that extends ``Node`` class.
-  * Override the ``execute()`` method to write custom code. The ``execute()`` method wiill ``transform`` the incoming DataFrame and then pass on the resulting DataFrame to output node(s).
-  * In case this new node creates a ``new DataFrame`` by reading data from a Data Source, the incoming DataFrame would be null. The new node will create a new DataFrame from the data directory from the Data Source. Example of data sources include:
-  
+The customer node might be a ``Dataset`` node or a ``Transform`` node.
+
+A ``Dataset`` node reads data from some source into a Dataframe. It passes on this new Dataframe to the next node. Examples of data sources include:
+
     * Files on HDFS
     * HIVE tables
     * HBase tables
     * Cassandra
     * MongoDB
     * Salesforce / Marketo
-    * etc.
-  * If the node is updating the incoming schema, also override the ``getOutputSchema()`` method.
-  
-**Examples of Custom Nodes:**
 
-  * https://github.com/sparkflows/writing-new-node/tree/master/src/main/java/fire/nodes/examples
-  * https://github.com/sparkflows/writing-new-node/tree/spark-2.x/src/main/java/fire/nodes/examples
-  * https://github.com/sparkflows/writing-new-node/blob/master/src/main/scala/fire/nodes/examples/NodeTestDateToAge.scala
-  
-There is minor difference between the code for Apache Spark 1.6.X and Apache Spark 2.X.
+A ``Transform`` node recieves an input Dataframe(s), transforms it and send the transformed Dataframe to the next node.
 
-``DataFrames`` are used for Apache Spark 1.6.X, while ``Dataset<Row>`` is used for Apache Spark 2.X.
+**Writing a Dataset node**
+Create a new class that extends the ``NodeDataset`` class.
+
+*Override the ``execute()`` method. The ``execute()`` method will read in data from the defined source into a Dataframe. It would the pass on the resulting DataFrame to the output node(s).
+*Override the ``getOutputSchema()`` method to return the schema of the Dataframe created by the node.
  
-Create the node JSON file
+**Writing a Transform node**
+Create a new class that extends the ``Node`` class.
+ 
+*Override the ``execute()`` method. The ``execute()`` method will ``transform`` the incoming Datafram and the pass on the resulting Dataframe to output node(s).
+*If the node is updating the incoming schema, also override the ``getOutputSchema()`` methods. Otherwise the incoming schema to this node is sent to the next node(s).
+
+**Examples of Custom Nodes**
+Example of custom nodes are available at:
+
+*https://github.com/sparkflows/writing-new-node/tree/master/src/main/java/fire/nodes/examples
+
+ 
+Step 4: Create the node JSON file
 -------------------------
 
 Create the JSON file for the new node. The JSON file is used for displaying the new node in the ``Workflow Editor`` and capturing the user inputs of the various fields of the node through a ``Dialog box``. The JSON for the node also captures the name of the ``Java/Scala class`` which has the implementation code for the Node.
@@ -63,7 +75,7 @@ Fire supports various ``widgets types`` for capturing the details of the fields 
 * https://github.com/sparkflows/sparkflows-stanfordcorenlp/tree/master/nodes/StanfordCoreNLP
 
 
-Deploy the Custom Node in the Fire Server
+Step 5: Deploy the Custom Node in the Fire Server
 -----------------------------------------
 
 Now that you have created a new node, follow the steps below to deploy it:
