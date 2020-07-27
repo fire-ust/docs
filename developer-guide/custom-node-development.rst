@@ -98,6 +98,6 @@ The new node will be picked up by the Fire Server and be visible in the ``Workfl
 Use the custom node in Spark submit when running on the Spark cluster
 --------------------------------------------------------------------- 
  
-  * Include the custom node with ``--jars <...>`` when running the workflow on the cluster
+  * Select the custom node jar checkbox when executing the workflow containing the custom node.
   * You can also include the custom node with ``--jars <...>`` when running the workflow on the cluster
 
