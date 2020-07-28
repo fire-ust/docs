@@ -63,28 +63,28 @@ If ``ldaps`` is being used, the ldap certificate needs to be imported into cacer
 
 For Reference : https://docs.oracle.com/cd/E19509-01/820-3399/ggfrj/index.html
 
-Importing a user from LDAP into Fire
+Importing a user from LDAP into Sparkflows
 ------------------------------------------
 
-Once LDAP is enabled in Fire, users can be imported into Fire from LDAP.
+Once LDAP is enabled in Sparkflows, users can be imported into Sparkflows from LDAP.
 
 * Go to Administration/User
 * Click on Add/Sync User
 * Enter the username and click on Search
 * User details are fetched from LDAP
-* Click on Add User to create the user in Fire
+* Click on Add User to create the user in Sparkflows
 
 User Login
 ----------
 
-Once LDAP is enabled in Fire, all the authentication for login in Fire are done against LDAP.
+Once LDAP is enabled in Sparkflows, all the authentication for login in Sparkflows are done against LDAP.
 
 Search Order
 -----
 
-Fire would search in LDAP and then in its DB. Search order is determined by the parameter ldap.Order.
+Sparkflows would search in LDAP and then in its DB. Search order is determined by the parameter ldap.Order.
 
-If it is set to ``LDAP_DB``, it would first search for the User in LDAP and then in its own DB. This allows having the admin user in the Fire DB if needed, so that all users are not locked out of the system in case LDAP goes down or ends up with invalid Configurations.
+If it is set to ``LDAP_DB``, it would first search for the User in LDAP and then in its own DB. This allows having the admin user in the Sparkflows DB if needed, so that all users are not locked out of the system in case LDAP goes down or ends up with invalid Configurations.
 
 Reference
 ---------
@@ -96,8 +96,8 @@ Below are some great links for reference:
 What if I get locked out
 ------------------------
 
-``ldap.Order`` determines the order in which Fire tries to log in the user.
-In case you are locked out of Fire and are not able to log in, you can do the following:
+``ldap.Order`` determines the order in which Sparkflows tries to log in the user.
+In case you are locked out of Sparkflows and are not able to log in, you can do the following:
 
 * Add the below line to conf/configuration.properties::
 

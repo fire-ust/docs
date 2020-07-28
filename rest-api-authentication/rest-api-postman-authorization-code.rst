@@ -23,7 +23,7 @@ Click on Authorization tab
 Click on Request Token
 ==================
 
-It will redirect to Fire login URL Page.
+It will redirect to sparkflows login URL Page.
 
 
 Fill the username and password and click on signIn

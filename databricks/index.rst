@@ -6,10 +6,11 @@ Databricks Guide
    :maxdepth: 2
 
    databricks-installation.rst
-   browsing-tables.rst
-   databricks-clusters.rst
-   dbfs-browse.rst
-   reading-writing.rst
+   user-guide/index.rst
+   troubleshooting.rst
+
+   
+   
    
    
 

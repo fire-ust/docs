@@ -16,7 +16,7 @@ It then gets the list of Processors in Fire Insights using the REST API and prin
 
    #!/usr/bin/python
 
-   # This python script logs into an instance of Fire, and then gets the list of Processors/Operators supported
+   # This python script logs into an instance of sparkflows, and then gets the list of Processors/Operators supported
 
    # -*- coding: utf-8 -*-
    import json
@@ -32,7 +32,7 @@ It then gets the list of Processors in Fire Insights using the REST API and prin
 
    with requests.session() as s:
 
-     # log into Fire
+     # log into sparkflows
      r = s.post(urllogin, data=payload)
 
      # get list of processors

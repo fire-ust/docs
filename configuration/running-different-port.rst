@@ -20,7 +20,7 @@ By default the fire server runs on the following ports:
     
 Below are the steps for running fire server on a different port.
 
-    - Navigate to the conf folder under Fire install directory 
+    - Navigate to the conf folder under Sparkflows install directory 
     - Open application.properties file:
 
         - Configure http and https port numbers: Default 8080 for http and 8443 for https
@@ -40,7 +40,7 @@ Fire by default runs on port 8081.
 
 In order to run Fire on a different port:
 
-- Navigate to the conf folder under Fire install directory 
+- Navigate to the conf folder under Sparkflows install directory 
     - Open ``application.properties`` file:
     
     - Configure the http port

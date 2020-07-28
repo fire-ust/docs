@@ -23,7 +23,7 @@ The below code in Python does the following:
 
     token_url = "http://hostname:8080/oauth/token"
 
-    processor_count_api_url = "http://hostname:8080/getNodeCount" # processor list count api of Fire
+    processor_count_api_url = "http://hostname:8080/getNodeCount" # processor list count api of sparkflows
 
     #Step A - resource owner supplies credentials
     #Resource owner (enduser) credentials

@@ -1,11 +1,16 @@
 S3 Integration
 ==========
 
-Fire Insights allows you to access your files on S3. This page describes S3 integration when Fire Insights is running in standalone mode.
+Fire Insights allows you to access your files on S3. This page describes S3 integration of Fire.
 
-We recommend controlling access to S3 using IAM Roles. Run the EMR cluster with the appropriate S3 IAM Role.
+We recommend controlling access to S3 using IAM Roles. 
+
+- Run Fire Insights on an EC2 machine with the appropriate S3 IAM Role.
+- Run the EMR cluster with the appropriate S3 IAM Role.
 
 If you are running Fire Insights on a independent machine, you can also use ``aws configure`` to set the AWS Access Key and Secret Access Key on the machine.
+
+AWS CLI S3 Reference : https://docs.aws.amazon.com/cli/latest/reference/s3/ls.html
 
 Installing aws cli
 ---------------
@@ -22,23 +27,24 @@ Run ``aws configure`` to configure your credentials on the machine on which Fire
 Access S3 in fire-ui
 ---------------------
 
-In Fire Insights, you can browse S3 under the menu Browser/S3.
+In Fire Insights, you can browse S3 under the menu Browser/AWS S3.
 
 .. figure:: ../_assets/tutorials/awscli/AWS3.PNG
-   :alt: awscli
+   :alt: s3
    :align: center
    
-- Click on AWS s3 then we will get File available in it.
+- Click on AWS S3 to view the files on S3.
+
+.. figure:: ../_assets/tutorials/awscli/AWS4.PNG
+   :alt: s3
+   :align: center
+   
 
 Protecting Data Using Server Side Encryption
 --------------
 
 Data encryption settings on S3 buckets: https://docs.aws.amazon.com/AmazonS3/latest/dev/serv-side-encryption.html
 
-
-.. figure:: ../_assets/tutorials/awscli/AWS4.PNG
-   :alt: awscli
-   :align: center
    
    
 REFERENCE : Creating Access Key & Secret Key

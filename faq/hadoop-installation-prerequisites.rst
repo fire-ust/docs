@@ -175,7 +175,7 @@ AFTER INSTALLATION GET CDH TO USE JAVA 8
   - then redeploy the client configurations
   - Restart the cluster service
 
-Install Fire
+Install Sparkflows
 ------------------
 
   - ssh to the machine
@@ -189,7 +189,7 @@ Install Fire
 Upload the Fire Insights example data directory onto HDFS
 ------------------------------------
 
-- As Fire user
+- As sparkflows user
 - cd fire-x.y.z
 - hadoop fs -put data  
 
@@ -199,8 +199,8 @@ Log into Fire Insights
 - http://host-ip:8080/#/dashboard
 
   - Log in with admin/admin
-  - Create user sparkflows in Fire. Give it admin rights. Add to group default, save it.
-  - Again Login with Fire user.
+  - Create user sparkflows in Sparkflows. Give it admin rights. Add to group default, save it.
+  - Again Login with sparkflows user.
   - Go to Configurations under administration and click on infer hadoop cluster config and save it.
   - open spark and update spark2-submit under "spark.spark-submit" and save it.
   - Create a workflow and execute it.

@@ -77,7 +77,7 @@ This workflow consists of the following steps:
 
 - Using the LinearRegression Node - Perform LinearRegression:
 
-- This is a Spark MLLib provided algorithm that Fire exposes to you as a plug-and-play “node”. LinearRegression from SparkML.
+- This is a Spark MLLib provided algorithm that Sparkflows exposes to you as a plug-and-play “node”. LinearRegression from SparkML.
 - Using Predict Node: Perform prediction using the model generated on the remaining 30% dataset
 - Finally evaluate the result using the PrintNRows node.
 

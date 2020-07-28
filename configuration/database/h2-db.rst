@@ -16,17 +16,17 @@ Execute the following steps on your CLI:
 
 * Mac/Linux::
 
-    cd <install_dir>/sparkflows-fire-x.y.z
+    cd <install_dir>/fire-x.y.z
     ./create-h2-db.sh
 
 * Windows::
 
-    cd <install_dir>\sparkflows-fire-x.y.z
+    cd <install_dir>\fire-x.y.z
     .\create-h2-db.bat
 
  
 
-If you would like to use different values for the db, username, password, update them in ``<install_dir>/sparkflows-fire-1.4.0/conf/db.properties``::
+If you would like to use different values for the db, username, password, update them in ``<install_dir>/fire-1.4.0/conf/db.properties``::
 
 
     spring.datasource.url = jdbc:h2:file:~/firedb

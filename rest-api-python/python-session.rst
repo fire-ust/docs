@@ -14,7 +14,7 @@ The below code in Python gets the list of Processors in Fire Insights using the 
 
    #!/usr/bin/python
 
-   # This python script logs into an instance of Fire, and then gets the list of Processors/Operators supported
+   # This python script logs into an instance of sparkflows, and then gets the list of Processors/Operators supported
 
    # -*- coding: utf-8 -*-
    import json
@@ -55,7 +55,7 @@ The below code in Python creates a new Workflow in the Project with id 1.
 
    #!/usr/bin/python
    
-   # This python script logs into an instance of Fire, and then gets the list of Processors/Operators supported
+   # This python script logs into an instance of sparkflows, and then gets the list of Processors/Operators supported
 
    # -*- coding: utf-8 -*-
    import json

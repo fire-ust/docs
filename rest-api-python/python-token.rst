@@ -20,7 +20,7 @@ The below code in Python invokes the Fire Insights REST API to calculate number 
 
     token_url = "http://localhost:8080/oauth/token"
 
-    processor_count_api_url = "http://localhost:8080/getNodeCount" # processor list count api of Fire
+    processor_count_api_url = "http://localhost:8080/getNodeCount" # processor list count api of sparkflows
 
     #Step A - resource owner supplies credentials
     #Resource owner (enduser) credentials

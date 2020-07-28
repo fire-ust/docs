@@ -5,11 +5,11 @@ Running Workflows
 Getting Exception : 'User: ec2-user is not allowed to impersonate ec2-user
 --------------------------------------------------------------------------
 
-Fire impersonates the logged in user when submitting the jobs onto the Cluster.
+Sparkflows impersonates the logged in user when submitting the jobs onto the Cluster.
 
-So, the user with which Fire is running has to be configured on HDFS as a proxy user.
+So, the user with which Sparkflows is running has to be configured on HDFS as a proxy user.
 
-Details for allowing the Fire user to impersonate other users is available at:
+Details for allowing the sparkflows user to impersonate other users is available at:
 
 * :doc:`../installation-upgrading/connecting-spark-cluster`
 
@@ -18,11 +18,11 @@ Details for allowing the Fire user to impersonate other users is available at:
 When running the workflows on my Spark Cluster, results are not showing up in the Browser
 -----------------------------------------------------------------------------------------
 
-This is probably because there is some configuration error. Fire uses spark-submit to submit the jobs to the cluster. The driver of the spark job posts back results to the Fire server.
+This is probably because there is some configuration error. Sparkflows uses spark-submit to submit the jobs to the cluster. The driver of the spark job posts back results to the Fire server.
 
 * Check out the log for spark-submit for the workflow in ``/tmp/fire/workflowlogs`` to find the root cause. Maybe the spark job is just failing.
 
-* It is also useful to ensure Spark jobs can be submitted to the Cluster from the machine on which Fire is running with spark-submit. Submit the ``SparkPi`` job from ``spark-examples.jar`` to test it.
+* It is also useful to ensure Spark jobs can be submitted to the Cluster from the machine on which Sparkflows is running with spark-submit. Submit the ``SparkPi`` job from ``spark-examples.jar`` to test it.
 
   * ``SparkPi`` can be run with a command like : ``spark-submit --class org.apache.spark.examples.SparkPi --master yarn --deploy-mode client spark-examples.jar 10``
   * ``spark-examples.jar`` is in your Apache Spark install direction on the machine.
@@ -53,7 +53,7 @@ The example workflows read in input files.
 
 * They have to be on HDFS in the home directory of the logged in user. 
    
-* The data directory which comes with Fire has to be uploaded onto HDFS.
+* The data directory which comes with Sparkflows has to be uploaded onto HDFS.
 
 * For example, if the logged in user is ``john``, then the data directory would be on HDFS in the directory ``/user/john``
   

@@ -63,10 +63,10 @@ In the above **$id** would be replaced with **3**.
  
  
 
-Specifying ``--var`` parameters for all in Fire User Interface
+Specifying ``--var`` parameters for all in Sparkflows User Interface
 -----------------------------------------------------------------
  
-Fire also allows specifying the **--var** parameters to be passed to all the jobs submitted through Fire. Below is the screen under Administration/Configuration.
+Sparkflows also allows specifying the **--var** parameters to be passed to all the jobs submitted through Sparkflows. Below is the screen under Administration/Configuration.
 
 .. figure:: ../../_assets/user-guide/passing-parameters-3.png
    :alt: Passing Parameters to Workflows
@@ -74,4 +74,4 @@ Fire also allows specifying the **--var** parameters to be passed to all the job
    
 In the above, **app.vars** parameter allows specifying a space separated list of name=value pairs. 
 
-Each of these are passed to the jobs submitted by Fire with ``--var name=value``
+Each of these are passed to the jobs submitted by Sparkflows with ``--var name=value``

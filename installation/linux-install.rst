@@ -3,7 +3,7 @@ Linux/Mac OS Installation Steps
 
 Fire can run independently on any machine, since we package Apache Spark along with or it can be connected to a Spark cluster.
 
-If Fire Fire needs to be connected to a Spark Cluster, install it on an edge node of the cluster. The edge node has the hadoop binaries and spark configs.
+If Sparkflows Fire needs to be connected to a Spark Cluster, install it on an edge node of the cluster. The edge node has the hadoop binaries and spark configs.
 
 Quick Installation Steps of Fire with H2 DB
 -------------------------------------------

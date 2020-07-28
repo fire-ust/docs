@@ -1,7 +1,7 @@
 Python Integration
 ===================
 
-Fire supports Python in Workflows in a few ways:
+Sparkflows supports Python in Workflows in a few ways:
 
 * PySpark Processor
 

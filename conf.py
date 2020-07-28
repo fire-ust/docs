@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #
-# Fire documentation build configuration file, created by
+# Sparkflows documentation build configuration file, created by
 # sphinx-quickstart on Sat Nov 18 23:43:48 2017.
 #
 # This file is execfile()d with the current directory set to its
@@ -60,9 +60,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'UST Fire'
-copyright = '2020, UST Global Inc'
-author = 'UST Fire'
+project = 'Sparkflows'
+copyright = '2020, Sparkflows Inc.'
+author = 'Sparkflows'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -163,7 +163,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'Sparkflows.tex', 'Fire Documentation',
+    (master_doc, 'Sparkflows.tex', 'Sparkflows Documentation',
      'Sparkflows', 'manual'),
 ]
 
@@ -173,7 +173,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'sparkflows', 'Fire Documentation',
+    (master_doc, 'sparkflows', 'Sparkflows Documentation',
      [author], 1)
 ]
 
@@ -184,7 +184,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'Sparkflows', 'Fire Documentation',
+    (master_doc, 'Sparkflows', 'Sparkflows Documentation',
      author, 'Sparkflows', 'One line description of project.',
      'Miscellaneous'),
 ]

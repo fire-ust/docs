@@ -13,15 +13,15 @@ Download & Install the Tesseract Language Data  files
 * Make sure that the tessdata directory is accessible to all the users.  
 
 
-Set TESSDATA_PREFIX as an Environment Variable and restart the Fire server
+Set TESSDATA_PREFIX as an Environment Variable and restart the Sparkflows server
 -----
 
 * Point the environment variable TESSDATA_PREFIX to the tessdata directory
 
   * ``export TESSDATA_PREFIX=/home/centos/tessdata``
-* Restart the Fire server
+* Restart the sparkflows server
 
-*  If the above is not done correctly, then the Fire server would exit when any OCR node is run
+*  If the above is not done correctly, then the Sparkflows server would exit when any OCR node is run
 
 
 Include TESSDATA_PREFIX in spark configs when submitting the job

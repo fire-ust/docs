@@ -81,7 +81,7 @@ Jaccard
 
 The Jaccard similarity measures similarity between finite sample sets, and is defined as the cardinality of the intersection of sets divided by the cardinality of the union of the sample sets. Suppose you want to find jaccard similarity between two sets A and B it is the ration of cardinality of A ∩ B and A ∪ B.
 
-Fire provide default 3-gram Jaccard similarity measures.
+Sparkflows provide default 3-gram Jaccard similarity measures.
 
 
 Longest common subsequences(LCS): LCS distance between strings s1 and s2, computed as |s1| +|s2| - 2 * |LCSfunction(s1, s2)| and distance is normalized between 0 and 1.

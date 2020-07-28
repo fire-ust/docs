@@ -1,7 +1,7 @@
 REST API Examples using Python
 ==========
 
-Fire provides REST API for interacting with it.
+Sparkflows provides REST API for interacting with it.
 
 Below are examples using tokens. The first step is to log in with your username and password and acquire the token.
 

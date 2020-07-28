@@ -1,7 +1,7 @@
 Jython
 ======
 
-Fire has a Jython Processor.
+Sparkflows has a Jython Processor.
 
 The Jython Processor allows writing Jython code to process the incoming DataFrame. It then produces a resulting DataFrame.
 

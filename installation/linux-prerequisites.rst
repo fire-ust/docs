@@ -20,4 +20,22 @@ If using Python and PySpark (not needed for the core features of Fire Insights) 
   - Python 3.X can be set up with the Python virtual environment and activated
 
     
+Downloading and Installing Java 8
+---------------------------------
+
+Java 8 can be downloaded and installed from here : https://www.oracle.com/java/technologies/javase-jdk8-downloads.html
+
+You may have to set JAVA_HOME after the installation.
+
+There are various ways for Installing Java 8 on Linux. Some are listed below.
+
+Using Linux RPM Package
+-----------------------
+
+- Download the Linux x64 RPM Package
+- yum localinstall jdk-8u201-linux-x64.rpm
+- Update .bash_profile by adding JAVA_HOME
+
+export JAVA_HOME=/usr/java/jdk1.8.0_201-amd64/
+
     

@@ -1,7 +1,7 @@
 Operational Guide
 =================
 
-This document describes details for operating Fire when running on AWS.
+This document describes details for operating Sparkflows when running on AWS.
 
 Onboarding New Users
 --------
@@ -18,14 +18,14 @@ Backup and Recovery
 
 Fire Insights stores the metadata into a Relational Database.
 
-It comes with an embedded H2 database. It scales well for pretty heavy loads and upto 50 users. Fire can be easily configured to run with an MySQL database.
+It comes with an embedded H2 database. It scales well for pretty heavy loads and upto 50 users. Sparkflows can be easily configured to run with an MySQL database.
 
-When running with H2 database, Fire by default stores the db files in the user home directory which is running Fire. There are 2 files:
+When running with H2 database, Sparkflows by default stores the db files in the user home directory which is running Sparkflows. There are 2 files:
 
 - firedb.mv.db	
 - firedb.trace.db
 
-For backup, just copying these files to a backup location is enough. There is no need to stop Fire. It is a good idea to copy it to another maching.
+For backup, just copying these files to a backup location is enough. There is no need to stop Sparkflows. It is a good idea to copy it to another maching.
 
 When running with MySQL running on the same or different machine, the MySQL database named ``fire`` needs to be backed up.
 
@@ -39,6 +39,6 @@ Fire stores the details of the job executions in the relational database. Over t
 Support
 -------
 
-For support, you can contact Fire at support@sparkflows.io. We will guide you through the process.
+For support, you can contact Sparkflows at support@sparkflows.io. We will guide you through the process.
 
-Fire can also support you though Zendesk tickets. Get in touch with us for guidance and setup.
+Sparkflows can also support you though Zendesk tickets. Get in touch with us for guidance and setup.

@@ -10,7 +10,7 @@ Generate a Keystore
 
 You can use the following command for generating the Keystore::
 
-    keytool -genkeypair -alias sparkflows -keyalg RSA -validity 365 -keystore keystore.jks
+ keytool -genkey -keyalg RSA -alias sparkflows -keystore keystore.jks -validity 365 -keysize 2048 -ext san=ip:< host machine ip address>
 
 You will be prompted with the following questions and enter something similar to the SAMPLE answers::
 
@@ -55,6 +55,14 @@ This is configured in the file ``conf/application.properties``::
   #Configure http and https port numbers : Default 8080 for http and 8443 for https
   http.port=8080
   https.port=8443
+
+Finally restart the Fire Server
+-------------------------------
+
+Restart the Fire server for the changes to take effect::
+
+  ./run-fire-server.sh stop
+  ./run-fire-server.sh start
 
 
 

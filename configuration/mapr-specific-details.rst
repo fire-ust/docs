@@ -11,7 +11,7 @@ Download Fire Insights
 Turn off Impersonation
 ----------------------
 
-* In Administration / Configuration of Fire::
+* In Administration / Configuration of Sparkflows::
 
     Turn off impersonation : Set app.impersonateUsers = false
     Set maprfs : hdfs.namenodeURI = maprfs:///
@@ -27,6 +27,6 @@ Fire User
 
 * Fire has to be installed as a user which can submit jobs to the MapR cluster. Say we installed Fire as user ``mapr``::
 
-    Create a mapr user in Fire and log in as that user
-    Start using Fire
+    Create a mapr user in sparkflows and log in as that user
+    Start using Sparkflows
 

@@ -1,7 +1,7 @@
 REST API Authentication
 ==========
 
-Fire provides REST API for interacting with it.
+Sparkflows provides REST API for interacting with it.
 
 Swagger is also enabled and is available at http://<machine-name>:8080/swagger-ui.html
 

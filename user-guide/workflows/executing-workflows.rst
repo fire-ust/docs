@@ -32,9 +32,9 @@ In the above:
 +--------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Parameter          | Details                                                                                                                                                                                                |
 +====================+========================================================================================================================================================================================================+
-| fire-core jar file | It is the fire-core jar file required code for executing the workflow. The fire-core jar file is in the fire-lib directory of the Fire install                                                   |
+| fire-core jar file | It is the fire-core jar file required code for executing the workflow. The fire-core jar file is in the fire-lib directory of the sparkflows install                                                   |
 +--------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| postback-url       | http://<machine>:8080/messageFromSparkJob is the postback URL for fire UI. <machine> should be the machine name on which Fire is running. 8080 should be the port on which Fire is running |
+| postback-url       | http://<machine>:8080/messageFromSparkJob is the postback URL for fire UI. <machine> should be the machine name on which Sparkflows is running. 8080 should be the port on which Sparkflows is running |
 +--------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | job-id             | 1 is the job id. It can be of any value for now                                                                                                                                                           |
 +--------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -57,7 +57,7 @@ For running the workflow in debug mode, add the following parameters::
 Workflow JSON
 --------------
  
-In Fire, workflows are saved as JSON Strings. 
+In Sparkflows, workflows are saved as JSON Strings. 
   
 The View JSON Workflow page of the Workflow displays the JSON representations of the workflow. 
 
@@ -110,7 +110,7 @@ Many times it is helpful to be able to debug the workflows. One easy way is to c
  
 Running in debug mode does a few things:
 
-* Performs a count() after executing each Processor. This makes it easier to track errors. It takes out Fire lazy execution from the picture.
+* Performs a count() after executing each Processor. This makes it easier to track errors. It takes out Sparkflows lazy execution from the picture.
 * Displays the number of records processed at each stage.
 * Display more information, for each SQL etc. which are being executed.
 

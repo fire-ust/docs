@@ -1,7 +1,7 @@
 Third Party Acknowledgements
 =================================
 
-Fire uses and distributes the following third party software. These are open source software licensed as mentioned.
+Sparkflows uses and distributes the following third party software. These are open source software licensed as mentioned.
 
 Server Libraries
 +++++++++++++++++

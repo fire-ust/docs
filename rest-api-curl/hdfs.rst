@@ -4,11 +4,11 @@ HDFS REST API
 Overview
 --------
 
-The HDFS REST API's, allow you to interact with the HDFS of the Hadoop Cluster Fire is connected to.
+The HDFS REST API's, allow you to interact with the HDFS of the Hadoop Cluster Sparkflows is connected to.
 
-Below are the various HDFS API's available in Fire
+Below are the various HDFS API's available in Sparkflows
 
-They should be executed after you have logged into Fire
+They should be executed after you have logged into Sparkflows
 
 Get List of Files in Directory
 ----------------
