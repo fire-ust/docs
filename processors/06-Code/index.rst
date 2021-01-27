@@ -4,13 +4,13 @@
 .. toctree::
    :maxdepth: 2
 
-   jython.rst
-   pipepython.rst
+   SQLExecuter.rst
    pipepython2.rst
+   scalaudf.rst
+   jython.rst
+   unixShellCommand.rst
+   sql.rst
+   scala.rst
+   pipepython.rst
    pyspark.rst
    runhivehql.rst
-   scala.rst
-   scalaudf.rst
-   sql.rst
-   SQLExecuter.rst
-   unixShellCommand.rst

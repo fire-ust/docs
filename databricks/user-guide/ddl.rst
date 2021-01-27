@@ -22,12 +22,11 @@ Below are example of running DDL
 Creating Table
 ++++++++++++++
 
-statement: 
+* DDL Statement::
 
-``` 
-CREATE TABLE `employee` (`id` INT, `name` STRING) USING com.databricks.spark.csv OPTIONS ( `multiLine` 'false', `escape` '"', `header` 'true', `delimiter` ',', path 'dbfs:/FileStore/tables/employee.csv' ); 
+    CREATE TABLE `employee` (`id` INT, `name` STRING) USING com.databricks.spark.csv OPTIONS ( `multiLine` 'false', `escape` '"', `header` 'true', `delimiter` ',', path 'dbfs:/FileStore/tables/employee.csv' ); 
 
-```
+
 
 Location of the data could be changed to S3 location.
 
@@ -41,7 +40,9 @@ Location of the data could be changed to S3 location.
 Running SQL
 +++++++++++
 
-statement: ``` select count(*) as cunt  from employee; ```
+* Select SQL Statement::
+
+    select count(*) as count  from employee;
 
 .. figure:: ../../_assets/configuration/sql-statement1.PNG
    :alt: Databricks
@@ -53,7 +54,10 @@ statement: ``` select count(*) as cunt  from employee; ```
 Sample Data:
 ++++++++++++
 
-statement: ``` select * from employee;```
+* Select SQL Statement::
+
+    select * from employee;
+    
 By default first 100 rows of data is displayed.
 
 .. figure:: ../../_assets/configuration/sql-statement2.PNG
@@ -66,7 +70,9 @@ By default first 100 rows of data is displayed.
 Drop Table
 ++++++++++
 
-statement: ``` drop table employee;```
+* Drop Statement::
+
+    drop table employee;
 
 .. figure:: ../../_assets/configuration/sql-statement3.PNG
    :alt: Databricks

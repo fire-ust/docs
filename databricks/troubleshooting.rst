@@ -26,7 +26,7 @@ Another reason might be that you are using the Databricks ``High Concurrency`` c
 When accessing most Databricks pages in Fire, it gives Simba JDBC error
 -----------------------------------------
 
-The probably reason for it is that the Databricks Simba JDBC jar file is not deployed in Fire.
+The reason for it is that the Databricks Simba JDBC jar file is not deployed in Fire.
 
 https://docs.sparkflows.io/en/latest/databricks/databricks-installation.html#install-databricks-jdbc-driver
 
@@ -45,6 +45,9 @@ There are times when it is helpful to look at the Cluster logs in Databricks whe
 The following logs under ``Driver Logs`` are useful:
 
 - log4j-active.log
+
+Search for ``WorkflowExecuteDatabricks`` in the logs to view if the Fire Insights Job is running in Databricks.
+
 
 java.lang.Exception: An error occurred while initializing the REPL. Please check whether there are conflicting Scala libraries or JARs attached to the cluster, such as Scala 2.11 libraries attached to Scala 2.10 cluster (or vice-versa).
 	at com.databricks.backend.daemon.driver.DatabricksILoop$class.initSpark(DatabricksILoop.scala:98)

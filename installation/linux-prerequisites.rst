@@ -23,19 +23,32 @@ If using Python and PySpark (not needed for the core features of Fire Insights) 
 Downloading and Installing Java 8
 ---------------------------------
 
-Java 8 can be downloaded and installed from here : https://www.oracle.com/java/technologies/javase-jdk8-downloads.html
+Java 8 can be downloaded and installed from here : https://www.oracle.com/java/technologies/javase/javase8-archive-downloads.html
 
 You may have to set JAVA_HOME after the installation.
 
 There are various ways for Installing Java 8 on Linux. Some are listed below.
 
 Using Linux RPM Package
------------------------
+=======================
 
 - Download the Linux x64 RPM Package
-- yum localinstall jdk-8u201-linux-x64.rpm
-- Update .bash_profile by adding JAVA_HOME
+- yum localinstall jdk-8u202-linux-x64.rpm (this has to be run as the root user)
 
-export JAVA_HOME=/usr/java/jdk1.8.0_201-amd64/
+Update ``.bash_profile`` to add the below::
+
+  export JAVA_HOME=/usr/java/jdk1.8.0_202-amd64/
+  export PATH=$PATH:$JAVA_HOME/bin
+
+
+Download OpenJDK
+----------------
+
+- https://openjdk.java.net/install/
+
+- Install OpenJDK on Ubuntu
+
+https://docs.datastax.com/en/jdk-install/doc/jdk-install/installOpenJdkDeb.html
+
 
     

@@ -1,7 +1,7 @@
-Custom Node Development & Deployment
+Custom Node Development & Deployment (Java/Scala)
 ====================================
 
-Fire Insights follows an open and extensible architecture allowing developers to add custom nodes that can be exposed in Fire UI and embedded into workflows.
+Fire Insights follows an open and extensible architecture allowing developers to add new custom nodes/processors that can be exposed in Fire UI and embedded into workflows.
  
  
 **The details for building new nodes are available at the URL below:**
@@ -31,7 +31,7 @@ Insall the Fire core jar to your local maven repository. The pom.xml contains th
 Step 3 : Code the new custom node
 ------------------------
 
-The customer node might be a ``Dataset`` node or a ``Transform`` node.
+The custom node might be a ``Dataset`` node or a ``Transform`` node.
 
 A ``Dataset`` node reads data from some source into a Dataframe. It passes on this new Dataframe to the next node. Examples of data sources include:
   
@@ -90,9 +90,9 @@ The details of the various widget types is available at the URL below:
 Examples of Node JSON
 +++++++++++++++++++++
 
-* https://github.com/sparkflows/writing-new-node/blob/master/json/testprintnrows.json
-* https://github.com/sparkflows/writing-new-node/blob/master/json/testmovingaverage.json
-* https://github.com/sparkflows/sparkflows-stanfordcorenlp/tree/master/nodes/StanfordCoreNLP
+* https://github.com/sparkflows/writing-new-node/blob/master/json/nodes/testprintnrows.json
+* https://github.com/sparkflows/writing-new-node/blob/master/json/nodes/testmovingaverage.json
+
 
 
 Step 5 : Deploy the Custom Node in the Fire Server

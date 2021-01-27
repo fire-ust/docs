@@ -22,7 +22,8 @@ Dataset Creation
 Choose type of Dataset to Create
 +++++++++++++++++++++++++++++++++
 
-Navigate to the "Datasets" tab in your application. Click on the "Create" button and choose "Dataset". In the pop-up choose "CSV" and then click "OK".
+Navigate to the "Datasets" tab in your application. Click on the "Create" button and choose "Dataset".
+In the pop-up choose "CSV" and then click "OK".
 
 .. figure:: ../../_assets/tutorials/dataset/10.PNG
    :alt: Dataset

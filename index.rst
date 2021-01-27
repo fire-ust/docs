@@ -30,6 +30,30 @@ Configuration
    :maxdepth: 1
 
    configuration/index
+
+Authentication
+--------------
+
+.. toctree::
+   :maxdepth: 1
+
+   authentication/index
+
+Security
+--------------
+
+.. toctree::
+   :maxdepth: 1
+
+   security/index
+   
+Operating Fire Insights
+--------------------
+
+.. toctree::
+   :maxdepth: 1
+
+   operating/index
    
 Quick Start Guide
 --------------------------
@@ -47,6 +71,15 @@ User Guide
 
    user-guide/index
    
+Web App User Guide
+--------------------------
+
+.. toctree::
+   :maxdepth: 1
+
+   web-app/index
+   
+   
 Data Science
 ----------
 
@@ -55,6 +88,15 @@ Data Science
 
    machine-learning/index 
    
+Time Series
+----------
+
+.. toctree::
+   :maxdepth: 2
+
+   time-series/index
+
+
 Tutorials
 ----------
 
@@ -63,21 +105,6 @@ Tutorials
 
    tutorials/index
    
-Authentication
---------------
-
-.. toctree::
-   :maxdepth: 1
-
-   authentication/index   
-
-Operating Fire Insights
---------------------
-
-.. toctree::
-   :maxdepth: 1
-
-   operating/index
 
 Troubleshooting
 ---------------
@@ -87,6 +114,14 @@ Troubleshooting
    
    troubleshooting/index
    
+   
+Frequently Asked Questions
+--------------------------
+
+.. toctree::
+   :maxdepth: 1
+
+   faq/index
    
 Administration
 --------------
@@ -111,7 +146,30 @@ AWS Integration
    :maxdepth: 2
 
    aws/index
+ 
+AZURE Integration
+--------------
+
+.. toctree::
+   :maxdepth: 2
+
+   azure/index
    
+Load Balancer Integration
+--------------
+
+.. toctree::
+   :maxdepth: 2
+
+   loadbalancer/index   
+   
+Superset
+----------
+
+.. toctree::
+   :maxdepth: 2
+
+   superset/index   
 
 Python
 --------
@@ -138,14 +196,6 @@ Developer Guide
    :maxdepth: 2
 
    developer-guide/index
-
-Frequently Asked Questions
---------------------------
-
-.. toctree::
-   :maxdepth: 1
-
-   faq/index
 
    
 Processors

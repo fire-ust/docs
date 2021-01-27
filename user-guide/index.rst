@@ -9,6 +9,8 @@ User Guide
    visualizations/index.rst
    scheduling/index.rst
    export-import/index.rst
+   data_profile.rst
    pipelines.rst
    tesseract.rst
+
 
